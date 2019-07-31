@@ -1,0 +1,16 @@
+{
+  "name": "electron-webpack-dev-server",
+  "version": "1.0.0",
+  "bin": "bin/electron-webpack-dev-server.js",
+  "license": "MIT",
+  "files": [
+    "bin"
+  ],
+  "dependencies": {
+    "yargs": "^13.3.0"
+  },
+  "peerDependencies": {
+    "webpack": "^4.0.0",
+    "webpack-dev-server": "^3.7.0"
+  }
+}
