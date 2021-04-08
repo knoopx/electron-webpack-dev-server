@@ -18,9 +18,6 @@ function startDevServer(options) {
     historyApiFallback: true,
     overlay: true,
     inline: true,
-    stats: {
-      colors: true,
-    },
   }
 
   const rendererConfig = require(path.resolve(
