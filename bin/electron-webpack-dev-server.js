@@ -59,7 +59,7 @@ function startDevServer(options) {
       }
 
       const mainOutputFile = path.join(mainCompiler.outputPath, mainAssets[0])
-      child = spawn(path.join(LOCAL_BIN_PATH, "electron"), [mainOutputFile])
+      child = spawn(path.join(LOCAL_BIN_PATH, "electron"), [mainOutputFile], { shell: process.platform == 'win32' })
       child.stdout.on("data", (data) => {
         console.log(data.toString())
       })
